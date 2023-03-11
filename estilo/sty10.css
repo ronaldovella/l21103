@@ -1,0 +1,347 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    fint-weight: normal;
+}
+
+:root {
+--cor0: #c5ebd6;
+--cor1: #83e1ad;
+--cor2: #3ddc84;
+--cor3: #2fa866;
+--cor4: #1a5c37;
+--cor5: #863d1e;
+
+--fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+
+}
+
+body {
+    background-color: #1d1c1a;
+ 
+   font-family:var(--fonte-padrao);
+} 
+
+/* ==============================header========================================== */
+
+header {
+  
+   min-width: 100px;
+   max-width:1000px;  
+   margin:auto;
+   text-align: center;
+   padding-top: 0px;
+   margin-bottom:-5px;
+}
+
+header > h1 {
+   color:rgb(187, 171, 28);
+   font-family:var(--fonte-padrao);
+   font-size: 3em;
+   font-weight: normal;
+   margin-bottom: 20px;
+   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+}
+
+header > p {
+   font-family: var(--fonte-padrao);
+   font-size: 1.2em;
+   color:white;
+   max-width: 600px;
+   padding-right: 10px;
+   padding-left: 10px;
+   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
+}
+
+header img {
+   width:100%
+}
+
+header > h3{
+	text-align:center;
+}
+
+/* ============================nav====================================== */
+nav {
+	background-color: #1d1c1a;
+  padding: 10px;
+  max-width:980px;
+	margin:auto;
+	text-align: center;
+} 
+
+nav > a {
+color:#779eb4;
+padding: 0.5%;
+border-radius: 5px;
+text-decoration: none;
+transition-duration: .5s;
+font-size:16px;
+}
+
+nav > a:hover{
+    background-color: #2fa866;
+    color: #121401;
+	}
+/* ======================================main============================================== */
+main {
+    min-width: 100px;
+    max-width:1000px;
+    margin:auto;
+    padding: 0px;
+    margin-bottom: 30px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+main h1 {
+    font-family:Arial;
+    color:rgb(139, 218, 102);
+    font-weight: normal;
+    background-color: #1d1c1a; 
+   	text-align:center;
+	}
+
+main p {
+    margin: 15px 15px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: min(20px, 4vw);
+    line-height: 1.5em;
+    color:rgb(100, 150, 194);
+    }
+main strong {
+    color:var(--cor4) ;
+    font-weight: bold;
+  }
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    padding: 2px 6px;
+}
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor4) ;
+}
+main img {
+    width:100%;
+}
+main img.pequena {
+    max-width: 350px;
+    display:block;
+    margin: auto;
+}
+/* ===================================================HHHHHH========================================== */
+h1 {
+    font-family:Arial;
+    color:#1d1c1a;
+    font-size: min(30px,5vw);
+    font-weight: normal;
+    /*  background-image: linear-gradient(to right, var(--cor1), transparent);*/
+    text-indent: 8px;
+	 text-align:center;
+}
+h2{
+  font-family: 'Lucida Sans';
+      /*  color:var(--cor4);*/
+  font-size: min(12px,3vw);
+  font-weight: normal;
+  /*  background-image: linear-gradient(to right, var(--cor1), transparent);*/
+  text-indent: 10px;
+  color: white;
+  padding: 5px;
+  text-align:left;
+ }
+h3{
+	position: absolute;
+	text-align:center;
+	font-size:3vw;
+	margin-top:30px;
+  margin-left:400px;
+	color:blue;
+	text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+	}
+h4{
+	  font-family: 'Lucida Sans';
+    font-size: min(20px,3vw);
+    font-weight: normal;
+    text-indent: 10px;
+    color: white;
+    line-height: 30px;
+	text-align:left;
+}
+h5{
+    font-family: 'Lucida Sans';
+    font-size: min(15px,3vw);
+    font-weight: normal;
+    text-indent: 10px;
+    color: rgb(226, 114, 70);
+    line-height: 30px;
+}
+
+/* ====================container===row======col==================== */
+.container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .col-4{
+    width: 96%;
+  }
+  
+  .col-4-sm {
+    
+     width: 29.33%;
+  }
+  .col-5{
+      width: 96%;
+  }
+
+ .col-6 {
+    width: 20%;
+    background-color: #863d1e;
+   
+  }
+  .col-7{
+    width: 25%;
+    padding-left: 34%;
+   }
+  
+.col-8 {
+    width: 45%; 
+    padding-left: 24%;
+   }
+   .col-9 {
+       width: 28%;
+       padding-left: 0%;
+    }
+    .col-10 {
+    width: 45%; 
+    padding-left: 24%;
+    }
+    .col-11 {
+        width: 96%;
+    }
+    .col-11-sm {
+        width: 29.33%;
+    }
+    .hidden-sm {
+      display: none;
+    }
+    
+
+    /* =============================row=================================== */
+    .row {
+      position: relative;
+      width: 100%;
+    }
+    .row [class^="col"] {
+      float: left;
+      margin: 0.5rem 2%;
+      min-height: 0.125rem;
+    }
+
+    .row::after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+   
+/* ================================================================= */
+div.margem {
+    border-color: rgb(30, 163, 97) ;
+    border-width: 3px;
+    border-style:solid;
+    border-radius: 15px;
+    margin:1px;
+    padding: 10px;
+ }
+ 
+div.link {
+    padding: 20px;
+    text-align:center;
+}
+
+* {
+    margin: 0px;
+    padding:0px;
+}
+footer{
+	min-width: 300px;
+    max-width:1000px;
+    background-color:#1d1c1a;
+    color:white;
+    text-align: center;
+    padding:5px;
+	margin:auto;
+}
+
+footer p{
+    width: 96%;
+	color: var(--cor1);
+	font-family:Monotype Corsiva;
+	font-size:30px;
+	margin-top:-5px;
+	font-weight:lighter;
+    padding-left: 45px;
+}
+
+
+
+
+/* ===================================================================================== */
+
+
+
+.pp{
+    font-size: 15px;
+    color: white;
+    text-align:center;
+    padding: 15px;
+  }
+/* =======================================footer======================= */
+
+
+
+
+
+.moldura-dois {
+	width: 406px; 
+	border:8px inset #5f6632;
+	padding:15px;
+	background: #b1b1c3;
+	}
+
+/* ===============================responsivo =====================================*/
+
+
+
+@media only screen and (min-width: 33.75em) { 
+  .container {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 45em) { 
+  .col-4 {
+    width: 29.33%;
+  }
+  .hidden-sm {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 60em) { 
+  .container {
+    width: 100%;
+    max-width: 60rem;
+  }
+}
+
+
+
