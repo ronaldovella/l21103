@@ -204,17 +204,16 @@ h5{
 
  .col-6 {
     width: 20%;
-    background-color: #863d1e;
-   
   }
   .col-7{
-    width: 25%;
+    width: 30%;
     padding-left: 34%;
    }
   
 .col-8 {
-    width: 45%; 
-    padding-left: 24%;
+    /* width: 45%;  */
+    width: 45%;
+    padding-left: auto;
    }
    .col-9 {
        width: 28%;
@@ -225,8 +224,8 @@ h5{
     padding-left: 24%;
     }
     .col-11 {
-        width:20%;
-	padding-left: 17%;
+        width: 20%;
+        padding-left: 17%;
     }
     .col-11-sm {
         width: 29.33%;
@@ -255,12 +254,21 @@ h5{
    
 /* ================================================================= */
 div.margem {
-    border-color: rgb(30, 163, 97) ;
+    border-color: rgb(32, 30, 163) ;
     border-width: 3px;
     border-style:solid;
     border-radius: 15px;
-    margin:1px;
+    margin:auto;
     padding: 10px;
+    text-align: center;
+   
+ }
+ div.margem h12{
+ font-size: 14px;
+ text-align: left;
+ color:var(--cor0)
+ 
+ 
  }
  
 div.link {
@@ -292,32 +300,6 @@ footer p{
     padding-left: 45px;
 }
 
-
-
-
-/* ===================================================================================== */
-
-
-
-.pp{
-    font-size: 15px;
-    color: white;
-    text-align:center;
-    padding: 15px;
-  }
-/* =======================================footer======================= */
-
-
-
-
-
-.moldura-dois {
-	width: 406px; 
-	border:8px inset #5f6632;
-	padding:15px;
-	background: #b1b1c3;
-	}
-
 /* ===============================responsivo =====================================*/
 
 
@@ -343,6 +325,3 @@ footer p{
     max-width: 60rem;
   }
 }
-
-
-
