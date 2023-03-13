@@ -138,7 +138,7 @@ main img.pequena {
 /* ===================================================HHHHHH========================================== */
 h1 {
     font-family:Arial;
-    color:#1d1c1a;
+    color:#bb9445;
     font-size: min(30px,5vw);
     font-weight: normal;
     /*  background-image: linear-gradient(to right, var(--cor1), transparent);*/
@@ -206,9 +206,12 @@ h5{
     width: 20%;
   }
   .col-7{
-    width: 30%;
-    padding-left: 34%;
+    width: 60%;
+    padding-left: 18%;
    }
+   .col-7-sm {
+    width: 60%;
+}
   
 .col-8 {
     /* width: 45%;  */
@@ -254,7 +257,7 @@ h5{
    
 /* ================================================================= */
 div.margem {
-    border-color: rgb(32, 30, 163) ;
+    border-color: rgb(96, 223, 37) ;
     border-width: 3px;
     border-style:solid;
     border-radius: 15px;
@@ -271,34 +274,22 @@ div.margem {
  
  }
  
-div.link {
-    padding: 20px;
-    text-align:center;
-}
-
 * {
     margin: 0px;
     padding:0px;
 }
-footer{
-	min-width: 300px;
-    max-width:1000px;
-    background-color:#1d1c1a;
-    color:white;
-    text-align: center;
-    padding:5px;
-	margin:auto;
+h6 {
+  font-family:Arial;
+  color:#bb9445;
+  font-size: min(30px,5vw);
+  font-weight: normal;
+  /*  background-image: linear-gradient(to right, var(--cor1), transparent);*/
+  text-indent: 8px;
+ text-align:center;
+ padding-top: 30px;
+ 
 }
 
-footer p{
-    width: 96%;
-	color: var(--cor1);
-	font-family:Monotype Corsiva;
-	font-size:30px;
-	margin-top:-5px;
-	font-weight:lighter;
-    padding-left: 45px;
-}
 
 /* ===============================responsivo =====================================*/
 
@@ -321,6 +312,12 @@ footer p{
 
 @media only screen and (min-width: 60em) { 
   .container {
+    width: 100%;
+    max-width: 60rem;
+  }
+}
+@media only screen and (min-width: 60em) { 
+  .login {
     width: 100%;
     max-width: 60rem;
   }
